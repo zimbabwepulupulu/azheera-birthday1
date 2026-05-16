@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Azheera!</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  min-height:100vh;
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe4ec 50%, #fff0f5 100%);
+  font-family: 'Courier New', monospace;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  overflow-x:hidden;
+}
+.balloon {
+  position:fixed;
+  bottom:-100px;
+  font-size:2rem;
+  animation: float 10s linear infinite;
+  z-index:1;
+  pointer-events:none;
+}
+@keyframes float {
+  0% { transform:translateY(0) rotate(0deg); opacity:0; }
+  10% { opacity:1; }
+  100% { transform:translateY(-110vh) rotate(20deg); opacity:0; }
+}
+.card {
+  background:rgba(255,255,255,0.9);
+  border:3px solid #333;
+  border-radius:4px;
+  max-width:600px;
+  width:100%;
+  padding:40px;
+  position:relative;
+  z-index:10;
+  box-shadow: 8px 8px 0 rgba(0,0,0,0.1);
+  text-align:center;
+}
+.card::before {
+  content:'🎂';
+  position:absolute;
+  top:-30px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:3rem;
+  background:#fff;
+  padding:0 15px;
+  border:2px solid #333;
+  border-radius:50%;
+}
+h1 {
+  font-family: cursive;
+  color:#d63384;
+  font-size:2.2rem;
+  margin-bottom:10px;
+}
+.subtitle {
+  color:#c2185b;
+  margin-bottom:30px;
+}
+.message {
+  font-size:1.05rem;
+  line-height:1.9;
+  color:#222;
+  text-align:justify;
+  text-align-last:center;
+}
+.highlight { color:#d63384; font-weight:bold; }
+.signature { text-align:right; margin-top:30px; font-style:italic; color:#666; }
+.deco { margin-top:20px; font-size:2rem; }
+.confetti {
+  position:fixed;
+  width:10px; height:10px;
+  background:#ff6b6b;
+  animation: fall 5s linear infinite;
+  z-index:2; pointer-events:none;
+}
+@keyframes fall {
+  0% { transform:translateY(-10vh) rotate(0deg); opacity:1; }
+  100% { transform:translateY(110vh) rotate(720deg); opacity:0; }
+}
+</style>
+</head>
+<body>
+
+<div class="balloon" style="left:10%; animation-duration:8s; animation-delay:0s;">🎈</div>
+<div class="balloon" style="left:30%; animation-duration:10s; animation-delay:2s;">🎈</div>
+<div class="balloon" style="left:50%; animation-duration:9s; animation-delay:1s;">🎈</div>
+<div class="balloon" style="left:70%; animation-duration:11s; animation-delay:3s;">🎈</div>
+<div class="balloon" style="left:85%; animation-duration:8s; animation-delay:4s;">🎈</div>
+
+<div class="confetti" style="left:10%; background:#ff6b6b; animation-delay:0s;"></div>
+<div class="confetti" style="left:30%; background:#4ecdc4; animation-delay:1s;"></div>
+<div class="confetti" style="left:50%; background:#ffe66d; animation-delay:2s;"></div>
+<div class="confetti" style="left:70%; background:#ff9ff3; animation-delay:0.5s;"></div>
+<div class="confetti" style="left:90%; background:#54a0ff; animation-delay:1.5s;"></div>
+
+<div class="card">
+  <h1>Happy Birthday!</h1>
+  <p class="subtitle">Azheera Carissany Putri ✨</p>
+  
+  <div class="message">
+    <p style="text-align:center; margin-bottom:20px; font-size:1.15rem;">
+      <strong>Selamat ulang tahun yang ke-13</strong> untuk <span class="highlight">Azheera Carissany Putri</span> 🎂✨
+    </p>
+    <p>
+      <span class="highlight">Azheera</span>, semoga di usia yang baru ini kamu tumbuh jadi gadis yang semakin kuat, cerdas, dan penuh kebaikan. Tetap jadi anak yang ceria, penuh mimpi, dan berani mengejar apa yang kamu inginkan ya.
+    </p>
+    <p style="text-align:center; margin:15px 0; font-size:1.2rem;">✨ 💫 🌟</p>
+    <p>
+      Semoga setiap langkah kamu selalu dipenuhi kebahagiaan, dikelilingi orang-orang yang sayang sama kamu, dan semua harapan kecilmu satu per satu bisa jadi nyata.
+    </p>
+    <p>
+      Ingat, kamu itu spesial banget, dan dunia ini selalu punya tempat buat kamu bersinar 💫
+    </p>
+    <p style="text-align:center; margin-top:20px; font-size:1.15rem;">
+      <strong>Happy birthday, Azheera! 🎉💖</strong>
+    </p>
+  </div>
+  
+  <div class="signature">— With love, Auntie 💕</div>
+</div>
+
+<div class="deco">🎁 🎊 🎈</div>
+
+</body>
+</html>
